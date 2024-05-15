@@ -105,7 +105,7 @@ public class SaghiProgressBar extends BasicProgressBarUI{
         String stringVerse = verses;
         int stringWidth = g.getFontMetrics().stringWidth(stringVerse);
         offset += velocity;
-        offset %= (w + 2 * stringWidth);
+        offset %= (w +  stringWidth + 13);
         g.setColor(getSelectionForeground());
         BasicGraphicsUtils.drawString(progressBar, g, stringVerse,
                 offset - stringWidth, 13);
