@@ -62,7 +62,7 @@ public class SaghiProgressBar extends BasicProgressBarUI{
     }
 
     private volatile int offset = 0;
-    private final int velocity = 3;
+    private final int velocity = 2;
     @Override
     protected void paintIndeterminate(Graphics g2d, JComponent c) {
 
@@ -101,7 +101,7 @@ public class SaghiProgressBar extends BasicProgressBarUI{
         g.setColor(background);
         g.fill(new RoundRectangle2D.Float(off, off, w - 2f*off - off, h - 2f*off - off, R, R));
 
-        g.setFont(progressBar.getFont().deriveFont(Font.BOLD ,JBUIScale.scale(10f) ));
+        g.setFont(progressBar.getFont().deriveFont(Font.PLAIN ,JBUIScale.scale(10f) ));
         String stringVerse = verses;
         int stringWidth = g.getFontMetrics().stringWidth(stringVerse);
         offset += velocity;
