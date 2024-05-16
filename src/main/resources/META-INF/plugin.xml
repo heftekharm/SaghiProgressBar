@@ -8,10 +8,10 @@
 
     <idea-version since-build="193"/>
 
-    <vendor email="heftekharm@gmail.com" url="">Hosein Eftekhari Manesh</vendor>
+    <vendor email="heftekharm@gmail.com" url="">Hosein Eftekhari</vendor>
 
     <description>
-        An Plugin to change the boring building progress into A Poem
+        An Plugin to change the boring building progress into A Poem (currently only Hafez poems)
     </description>
 
     <depends>com.intellij.modules.platform</depends>

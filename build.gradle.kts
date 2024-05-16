@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.hfm"
-version = "1.0-SNAPSHOT"
+version = "1.0.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -31,8 +31,8 @@ tasks {
     }
 
     patchPluginXml {
-        sinceBuild.set("232")
-        untilBuild.set("242.*")
+        sinceBuild.set("193")
+        //untilBuild.set("242.*")
     }
 
     signPlugin {
