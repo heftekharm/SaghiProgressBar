@@ -24,7 +24,7 @@ object PoemsRepository {
                         .readString()
                 val raw: List<List<String>> = Json.decodeFromString(string)
                 if (raw.isNotEmpty())
-                    verse = raw.first().map { PoemsRepository.decode(it) } .joinToString("   ")
+                    verse = raw.joinToString("      ") { verse -> verse.joinToString("  ") { decode(it) } }
             } catch (e: Exception) {
                 e.printStackTrace()
             }
