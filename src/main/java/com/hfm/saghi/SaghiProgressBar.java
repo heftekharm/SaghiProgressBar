@@ -90,7 +90,7 @@ public class SaghiProgressBar extends BasicProgressBarUI {
         g.setColor(background);
         g.fill(new RoundRectangle2D.Float(off, off, w - 2f * off - off, h - 2f * off - off, R, R));
         if (font == null) {
-            progressBar.getFont().deriveFont(Font.PLAIN, JBUIScale.scale(10f));
+            font = progressBar.getFont().deriveFont(Font.PLAIN, JBUIScale.scale(11f));
         }
         g.setFont(font);
         String stringVerse = verses;
