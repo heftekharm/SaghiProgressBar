@@ -31,7 +31,7 @@ public class SaghiProgressBar extends BasicProgressBarUI{
     }*/
 
 
-    private final JBColor wineColor = new JBColor("wine" , new Color(114, 47, 55));
+    private final Color wineColor = new Color(114, 47, 55);
 
 
     @SuppressWarnings({"MethodOverridesStaticMethodOfSuperclass", "UnusedDeclaration"})
