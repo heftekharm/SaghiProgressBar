@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.hfm"
-version = "1.0.0-SNAPSHOT"
+version = "1.0.2-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -32,16 +32,16 @@ tasks {
 
     patchPluginXml {
         sinceBuild.set("193")
-        //untilBuild.set("242.*")
+        untilBuild.set("")
     }
 
-    signPlugin {
+/*    signPlugin {
         certificateChain.set(System.getenv("CERTIFICATE_CHAIN"))
         privateKey.set(System.getenv("PRIVATE_KEY"))
         password.set(System.getenv("PRIVATE_KEY_PASSWORD"))
-    }
+    }*/
 
     publishPlugin {
-        token.set(System.getenv("PUBLISH_TOKEN"))
+        token.set(System.getenv("INTELLIJ_PLUGIN_PUBLISH_TOKEN"))
     }
 }
