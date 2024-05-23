@@ -16,13 +16,14 @@ import java.awt.*;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.geom.RoundRectangle2D;
+import java.io.IOException;
+import java.util.Objects;
 
 public class SaghiProgressBar extends BasicProgressBarUI {
 
     private String verses = PoemsRepository.INSTANCE.getVerse();
     private final Color wineColor = new Color(114, 47, 55);
-    private Font font = null;
-
+    private Font font = PoemsRepository.INSTANCE.getFont();
 
     @SuppressWarnings({"MethodOverridesStaticMethodOfSuperclass", "UnusedDeclaration"})
     public static ComponentUI createUI(JComponent c) {
